@@ -1,0 +1,2 @@
+word = 'poopoo'
+print(word)
