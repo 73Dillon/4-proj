@@ -6,7 +6,7 @@ import plotly.express as px
 import streamlit as st
 
 #read in csv
-df = pd.read_csv('c:/Users/dillo/Documents/Triple10/Sprint-4/4-proj/new_vehicles_us.csv')
+df = pd.read_csv('4-proj/new_vehicles_us.csv')
 
 #title
 st.title('Car Sales Listings in the U.S.')
