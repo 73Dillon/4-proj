@@ -8,6 +8,13 @@ import streamlit as st
 #read in csv
 df = pd.read_csv('new_vehicles_us.csv')
 
+# Check for null values in 'price' column and handle them
+if df['price'].isnull().any():
+    df['price'].fillna(0, inplace=True)
+
+# Ensure 'price' column is of integer type
+df['price'] = df['price'].astype(int)
+
 #title
 st.title('Car Sales Listings in the U.S.')
 
